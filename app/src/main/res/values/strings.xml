@@ -1,11 +1,19 @@
 <resources>
     <string name="app_name">Quete simple UI</string>
+<<<<<<< HEAD
     <string name="button">Valider</string>
     <string name="checkBox">Veux tu devenir un Wilder</string>
     <string name="welcome">Welcome to the Wild Code School</string>
     <string name="nom"></string>
     <string name="prenom"></string>
     <string name="felicitation"></string>
+=======
+    <string name="Welcome">Welcome to the Wild Code School!</string>
+    <string name="CheckBox">Oui je souhaite devenir un wilder</string>
+    <string name="Prénom"></string>
+    <string name="Nom"></string>
+    <string name="Valider">Valider</string>
+>>>>>>> 7c3c5075bf7742b8b005f9bca09e1edc9ccb7b73
 
 
 </resources>

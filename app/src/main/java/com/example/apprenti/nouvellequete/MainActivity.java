@@ -1,4 +1,5 @@
 package com.example.apprenti.nouvellequete;
+<<<<<<< HEAD
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
@@ -20,6 +21,19 @@ public class MainActivity extends Activity {
     Button button;
     CheckBox checkBox;
     TextView felicitation;
+=======
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.EditText;
+
+import static com.example.apprenti.nouvellequete.R.id.boutonV;
+
+public class MainActivity extends Activity {
+>>>>>>> 7c3c5075bf7742b8b005f9bca09e1edc9ccb7b73
 
 
     @Override
@@ -27,6 +41,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+<<<<<<< HEAD
          nom = (EditText) findViewById(R.id.nom);
          prenom = (EditText) findViewById(R.id.prenom);
          button = (Button) findViewById(R.id.button);
@@ -74,3 +89,28 @@ public class MainActivity extends Activity {
     }
 });
     } }
+=======
+        final CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox);
+        final EditText nom = (EditText) findViewById(R.id.nom);
+        final EditText prenom = (EditText) findViewById(R.id.prenom);
+
+        nom.setEnabled(false);
+        prenom.setEnabled(false);
+
+        checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked){
+
+                nom.setEnabled(checkBox.isChecked());
+                prenom.setEnabled(checkBox.isChecked());
+                boutonV.setEnabled(checkBox.isChecked());
+            }
+        });
+
+    }
+
+
+
+
+}
+>>>>>>> 7c3c5075bf7742b8b005f9bca09e1edc9ccb7b73
