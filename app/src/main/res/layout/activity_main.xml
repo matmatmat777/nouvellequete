@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to the Wild Code Scholl"
+        android:text="@string/welcome"
         android:id="@+id/textView" />
 
     <CheckBox
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="17dp"
         android:id="@+id/checkBox"
-        android:text="Veux tu devenir un Wilder?"
+        android:text="@string/checkBox"
         android:layout_below="@+id/textView"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -36,28 +36,40 @@
         android:layout_below="@+id/checkBox"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="41dp"
-        android:id="@+id/editText" />
+        android:id="@+id/prenom"
+        android:text="@string/prenom"
+        android:enabled="false"/>
+
+    <Button
+        android:text="@string/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox"
+        android:layout_marginBottom="101dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:layout_below="@+id/editText"
-        android:layout_alignRight="@+id/editText"
-        android:layout_alignEnd="@+id/editText"
-        android:layout_marginTop="12dp"
-        android:id="@+id/editText2" />
+        android:id="@+id/nom"
+        android:text="@string/nom"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignLeft="@+id/prenom"
+        android:layout_alignStart="@+id/prenom"
+        android:enabled="false"/>
 
-    <Button
-        android:text="Valider"
-        android:layout_width="wrap_content"
+    <TextView
+        android:text="@+id/felicitation"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText2"
-        android:layout_alignLeft="@+id/checkBox"
-        android:layout_alignStart="@+id/checkBox"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="94dp"
-        android:id="@+id/button" />
+        android:id="@+id/felicitation"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
